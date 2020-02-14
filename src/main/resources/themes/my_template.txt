@@ -1,0 +1,54 @@
+{!-- Package Name --}
+{% if $choices.package != ''%}
+package {$choices.package}
+{% endif %}
+public class {$choices.class}{.if ($choices.extends != '') } extends {$choices.extends}{/if}{.if ($choices.implements != '') } implements {$choices.implements}{/if} {
+
+    {!-- Instance Variables process--}
+    {% loop in $choices.fields as $field%}
+    {$field.access} {$field.type} {$field.name};
+    {% endloop %}
+    {!-- End Instance Variables process--}
+
+    {!-- Constructors --}
+    {!-- Empty Constructor --}
+    {% if($choices.empty_constructor == true) %}
+    public {$choices.class}() {
+    }
+    {% endif %}
+
+    {!-- Params Constructor --}
+    public {$choices.class}({% loop in $choices.fields as $field first_last="true"%}{$field.type} {$field.name}{.if(!$last) }, {/if}{% endloop %}) {
+    {% loop in $choices.fields as $field%}
+        this.{$field.name} = {$field.name};
+    {% endloop%}
+    }
+    {!-- End of Constructors --}
+
+    {!-- Main method process --}
+    {% if($choices.main == true) %}
+    public static void main(String[] args) {
+
+    }
+    {% endif %}
+    {!-- End Main method process--}
+
+    {!-- Getter & Setter methods process --}
+    {% if($choices.getter_setter == true) %}
+    {% loop in $choices.fields as $field%}
+    public {$field.type} get{$field.name|cap}(){
+        return this.{$field.name};
+    }
+
+    public void set{$field.name|cap}({$field.type} {$field.name}){
+        this.{$field.name} = {$field.name};
+    }
+    {% endloop %}
+    {% endif %}
+    {!-- End Getter & Setter methods process--}
+
+    {!-- toString method process--}
+    {% if($choices.to_string == true) %}
+    {% endif %}
+    {!-- End toString method process--}
+}
