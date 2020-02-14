@@ -1,16 +1,20 @@
-# Skeleton Starter for Vaadin
+# Java POJO Generator
 
-This project can be used as a starting point to create your own Vaadin application.
-It has the necessary dependencies and files to help you get started.
+# Getting Started
+My small (maybe)useful project.
 
-The best way to use it is via [vaadin.com/start](https://vaadin.com/start) - you can get only the necessary parts and choose the package naming you want to use.
-There is also a [getting started tutorial](https://vaadin.com/tutorials/getting-started-with-flow) based on this project.
+An web application that create an java class content depend on user's options, with Vaadin Flow Framework.
 
-To access it directly from github, clone the repository and import the project to the IDE of your choice as a Maven project. You need to have Java 8 or 11 installed.
+![](https://previews.dropbox.com/p/thumb/AAthMz1uGHtuRxB5GfkDlweZJLSPNo65iGbC-xztvQGDe_LI8-HT-nrYlB8jgeuycN8ePSq_iQNy58QPDsAelwPFQpjOv5U9cHOCTFCqubP9tohipBsSgc_a140yEgvGlVa-7smZyPM5lgJAtLkUVW2U9ywES1rWsZQAsr7WfC339pPaEDIJ5gn2PBWZsbYmDQS6QjZ3XyimERcDQFvDOC1ArNOGDEBf8507-uubEDJfovRALX7Tl57_IdzpvX7C8tPGdcyd3RD1F5_u_VnKp0nqLDsXcLJE86TZ10kozK7NNDqRrWTeiZmUaAXj1gJJNNxfFkZV5Dk86L8imUFxxStX/p.png)
 
-Run using `mvn jetty:run` and open [http://localhost:8080](http://localhost:8080) in the browser.
+# Installing
+Clone an import my project to your Java IDE, then execute these commands:
+```bash
+$ mvn install    # Build package
+$ npm install    # Install required nodejs packages
+$ mvn jetty:run  # Start Jetty Server
+```
+You can deploy it to Apache Tomcat instead Jetty.
 
 If you want to run your app locally in the production mode, run `mvn jetty:run -Pproduction`.
-
-For a full Vaadin application example, there are more choices available also from [vaadin.com/start](https://vaadin.com/start) page.
 
