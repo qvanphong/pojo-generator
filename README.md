@@ -6,6 +6,8 @@ My small (maybe)useful project.
 An web application that create an content of Object Class depend on user's options, with Vaadin Flow Framework.
 
 ![](https://raw.githubusercontent.com/qvanphong/pojo-generator/master/screenshot.png)
+# Demo
+Feel free to take a look at: https://simple-java-object-gen.herokuapp.com/
 
 # Prerequisites
 - JDK 8.0
