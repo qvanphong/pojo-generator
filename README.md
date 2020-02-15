@@ -1,4 +1,4 @@
-# Vaadin Flow -  Normal Object/POJO/Java Beans Generator
+# Vaadin Flow -  Simple Java Object Generator
 
 # Getting Started
 My small (maybe)useful project.
@@ -6,6 +6,11 @@ My small (maybe)useful project.
 An web application that create an content of Object Class depend on user's options, with Vaadin Flow Framework.
 
 ![](https://raw.githubusercontent.com/qvanphong/pojo-generator/master/screenshot.png)
+
+# Prerequisites
+- JDK 8.0
+- IDE With integrated Maven
+- Nodejs & npm 
 
 # Installing
 Clone an import my project to your Java IDE, then execute these commands:
